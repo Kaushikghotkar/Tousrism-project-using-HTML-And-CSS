@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adventor tourism-Home</title>
+    <link rel="stylesheet" href="main.css" />
+
+    <style>
+      .asd{
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgba(38, 255, 0, 0.3);
+         width: 40%; margin: auto;
+         label{
+          font-size: 20px;
+         }
+         border-radius: 10px;
+         textarea{
+          width:80%;
+          height: 70px;
+         }
+         margin-bottom: 30px;
+      }
+      #footer{
+        margin-bottom: 0px;
+        height: 100px;
+      }
+      *, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: acumin-pro, system-ui, sans-serif;
+  margin: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  font-size: 14px;
+  background-color: #f4f4f4;
+  align-items: start;
+  min-height: 100vh;
+}
+
+.footer {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 30px 30px 20px 30px;
+  color: #2f2f2f;
+  background-color: #fff;
+  border-top: 1px solid #e5e5e5;
+}
+
+.footer > * {
+  flex:  1 100%;
+}
+
+.footer__addr {
+  margin-right: 1.25em;
+  margin-bottom: 2em;
+}
+
+.footer__logo {
+  font-family: 'Pacifico', cursive;
+  font-weight: 400;
+  text-transform: lowercase;
+  font-size: 1.5rem;
+}
+
+.footer__addr h2 {
+  margin-top: 1.3em;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.nav__title {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.footer address {
+  font-style: normal;
+  color: #999;
+}
+
+.footer__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  max-width: max-content;
+  background-color: rgb(33, 33, 33, 0.07);
+  border-radius: 100px;
+  color: #2f2f2f;
+  line-height: 0;
+  margin: 0.6em 0;
+  font-size: 1rem;
+  padding: 0 1.3em;
+}
+
+.footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer li {
+  line-height: 2em;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer__nav {
+  display: flex;
+	flex-flow: row wrap;
+}
+
+.footer__nav > * {
+  flex: 1 50%;
+  margin-right: 1.25em;
+}
+
+.nav__ul a {
+  color: #999;
+}
+
+.nav__ul--extra {
+  column-count: 2;
+  column-gap: 1.25em;
+}
+
+.legal {
+  display: flex;
+  flex-wrap: wrap;
+  color: #999;
+}
+  
+.legal__links {
+  display: flex;
+  align-items: center;
+}
+
+.heart {
+  color: #2f2f2f;
+}
+
+@media screen and (min-width: 24.375em) {
+  .legal .legal__links {
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 40.375em) {
+  .footer__nav > * {
+    flex: 1;
+  }
+  
+  .nav__item--extra {
+    flex-grow: 2;
+  }
+  
+  .footer__addr {
+    flex: 1 0px;
+  }
+  
+  .footer__nav {
+    flex: 2 0px;
+  }
+}
+    </style>
+  </head>
+  <body>
+    <section class="navigation">
+      <nav>
+        <h1><img src="./ASS/ATLogo.png" alt="Logo" /></h1>
+        <div class="nav">
+          <a href="/index.html" target="_self">Home</a>
+          <a href="/About.html" target="_self">About</a>
+          <a href="/Gallery.html" target="_self">Gallery</a>
+          <a href="/Blogs.html" target="_self">Blog</a>
+          <a href="/Booking.html" target="_self">Booking</a>
+          <div class="navButton">
+            <button onclick="window.location.href='Login.html'">Login</button>
+            <button onclick="window.location.href='SignUp.html'">Signup</button>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <section class="main">
+      <h2>Welcome to gadchiroli tourism</h2>
+
+      <div class="slideshow-container" style="border: 10px solid white">
+        <div class="mySlides fade">
+          <img src="./ASS/bg1.jpg" alt="Slide 1" />
+          <div class="text">Dense Forest to Explore Nature</div>
+        </div>
+        <div class="mySlides fade">
+          <img src="./ASS/bg2.jpg" alt="Slide 2" />
+          <div class="text">Mountain to Trekking</div>
+        </div>
+        <div class="mySlides fade">
+          <img src="./ASS/bg4.jpg" alt="Slide 3" />
+          <div class="text">Ancient fort to Discovery the gadchiroli History</div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+    </section>
+    <section>
+      <form class="asd" >
+      <h2>Feedback Form</h2>
+
+          <label for="Name">Name:-</label>
+          <input type="text" name="Name">
+          <label for="Feedback">Feedback:-</label>
+          <textarea name="Feedback" id="Feed"></textarea>
+          <button type="submit">Submit</button>
+      </form>
+    </section>
+    <section id="footer" style="background-color: green;">
+      <footer class="footer">
+        <div class="footer__addr">
+          <h1 class="footer__logo">
+            <img src="./ASS/ATLogo.png" alt="" height="40px" width="100px">
+          </h1>
+              
+          <h2>Contact</h2>
+          
+          <address>
+            Alpha Academy ,Gondawana University,Gadchiroli<br>
+                
+            <a class="footer__btn" href="mailto:kaushikghotkar19@gmail.com">Email Us</a>
+          </address>
+        </div>
+        
+        <ul class="footer__nav">
+          <li class="nav__item">
+            <h2 class="nav__title">Social Links</h2>
+      
+            <ul class="nav__ul">
+              <li>
+                <a href="#">Youtube</a>
+              </li>
+      
+              <li>
+                <a href="#">Facebook</a>
+              </li>
+                  
+              <li>
+                <a href="#">Instagram</a>
+              </li>
+            </ul>
+          </li>
+          
+          <li class="nav__item nav__item--extra">
+            <h2 class="nav__title">Technology</h2>
+            
+            <ul class="nav__ul nav__ul--extra">
+              <li>
+                <a href="#">HTML</a>
+              </li>
+              
+              <li>
+                <a href="#">CSS</a>
+              </li>
+              
+        
+            </ul>
+          </li>
+          
+          <li class="nav__item">
+            <h2 class="nav__title">Legal</h2>
+            
+            <ul class="nav__ul">
+              <li>
+                <a href="#">Privacy Policy</a>
+              </li>
+              
+              <li>
+                <a href="#">Terms of Use</a>
+              </li>
+              
+              <li>
+                <a href="#">Sitemap</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        
+        <div class="legal">
+          <p>&copy; 2024 ADVENTOR. All rights reserved.</p>
+          
+          <div class="legal__links">
+            <span>Made with by Kaushik Team</span>
+          </div>
+        </div>
+      </footer>
+      <!-- <span class="heart">♥ -->
+    </section>
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slides[slideIndex - 1].style.display = "block";
+      }
+    </script>
+  </body>
+</html>

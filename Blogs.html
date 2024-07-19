@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventor tourism-Blogs</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<style>
+  .blogs{
+    text-align: center;
+    font-size: 30px;
+    color: #FFF;
+    text-decoration: underline;
+  }
+  a:hover{
+    scale: 1.2;
+  }
+  button:hover{
+    scale: 1.1;
+  }
+  h1{
+    scale: 1.1;
+  }
+  body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            height: 100vh;
+  }    
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+            /* background-color: #ffffff; */
+            /* border-radius: 10px; */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .grid-item {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .person-name {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .feedback {
+            font-size: 1em;
+            color: #555;
+        }
+</style>
+<body>
+      
+    <section class="navigation">
+        <nav>
+          <h1><img src="./ASS/ATLogo.png" alt="Logo" /></h1>
+          <div class="nav">
+            <a href="/index.html" target="_self">Home</a>
+            <a href="/About.html" target="_self">About</a>
+            <a href="/Gallery.html" target="_self">Gallery</a>
+            <a href="/Blogs.html" target="_self" active>Blog</a>
+            <a href="/Booking.html" target="_self">Booking</a>
+            <div class="navButton">
+              <button onclick="window.location.href='Login.html'">Login</button>
+              <button onclick="window.location.href='SignUp.html'">Signup</button>
+            </div>
+          </div>
+        </nav>
+      </section>
+      <Section>
+        <h2 style="text-align: center;">Blogs:-</h2>
+        <div class="grid-container">
+          <div class="grid-item">
+              <div class="person-name">John Doe</div>
+              <div class="feedback">Great service, very satisfied!</div>
+          </div>
+          <div class="grid-item">
+              <div class="person-name">Jane Smith</div>
+              <div class="feedback">Had a wonderful experience!</div>
+          </div>
+          <div class="grid-item">
+              <div class="person-name">Alice Johnson</div>
+              <div class="feedback">The support was excellent!</div>
+          </div>
+          <div class="grid-item">
+              <div class="person-name">Bob Brown</div>
+              <div class="feedback">Very happy with the results.</div>
+          </div>
+          <div class="grid-item">
+              <div class="person-name">Emily White</div>
+              <div class="feedback">Exceeded my expectations!</div>
+          </div>
+          <div class="grid-item">
+              <div class="person-name">Chris Green</div>
+              <div class="feedback">Will definitely recommend to others.</div>
+          </div>
+          <div class="grid-item">
+              <div class="person-name">Natalie Grey</div>
+              <div class="feedback">Friendly and professional service.</div>
+          </div>
+          <div class="grid-item">
+              <div class="person-name">Daniel Black</div>
+              <div class="feedback">Fast and reliable.</div>
+          </div>
+          <div class="grid-item">
+              <div class="person-name">Sophie Blue</div>
+              <div class="feedback">Fantastic experience overall.</div>
+          </div>
+      </div>
+  
+      </Section>
+
+      <section id="footer" style="background-color: green;">
+      
+    
+      
+        <footer class="footer">
+          <div class="footer__addr">
+            <h1 class="footer__logo">
+              <img src="./ASS/ATLogo.png" alt="" height="40px" width="100px">
+            </h1>
+                
+            <h2>Contact</h2>
+            
+            <address>
+              Alpha Academy ,Gondawana University,Gadchiroli<br>
+                  
+              <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
+            </address>
+          </div>
+          
+          <ul class="footer__nav">
+            <li class="nav__item">
+              <h2 class="nav__title">Social Links</h2>
+        
+              <ul class="nav__ul">
+                <li>
+                  <a href="#">Youtube</a>
+                </li>
+        
+                <li>
+                  <a href="#">Facebook</a>
+                </li>
+                    
+                <li>
+                  <a href="#">Instagram</a>
+                </li>
+              </ul>
+            </li>
+            
+            <li class="nav__item nav__item--extra">
+              <h2 class="nav__title">Technology</h2>
+              
+              <ul class="nav__ul nav__ul--extra">
+                <li>
+                  <a href="#">HTML</a>
+                </li>
+                
+                <li>
+                  <a href="#">CSS</a>
+                </li>
+                
+          
+              </ul>
+            </li>
+            
+            <li class="nav__item">
+              <h2 class="nav__title">Legal</h2>
+              
+              <ul class="nav__ul">
+                <li>
+                  <a href="#">Privacy Policy</a>
+                </li>
+                
+                <li>
+                  <a href="#">Terms of Use</a>
+                </li>
+                
+                <li>
+                  <a href="#">Sitemap</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          
+          <div class="legal">
+            <p>&copy; 2024 ADVENTOR. All rights reserved.</p>
+            
+            <div class="legal__links">
+              <span>Made with by Kaushik Team</span>
+            </div>
+          </div>
+        </footer>
+        <!-- <span class="heart">♥ -->
+      </section>
+</body>
+</html>
